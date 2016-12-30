@@ -15,13 +15,20 @@ Reward hacking exists in humans. For example, some people are known to pirate so
 Often, humans will not pirate software and will instead pay. In some scenarios, this behaviour is made more likely through adapting the context of the goal: operating systems with easier-to-use stores for software, or tight measures for signature and checking of authenticity of a program to discourage piracy. Other humans are less inclined to pirate than other, however --- there are therefore behavioural tendencies which limit the inclination of a mind to reward hack. Examples of this might include social responsibility or a decreased degree of comfort in actions which harm other agents in some way. Happily, computational comfort formalisms are already being developed~\citep{Marsh2011}, and computational responsibility formalisms are currently being worked on~\citep{wallis_responsibility}.\par
 
 \subsubsection{Corrigibility}
+\todo[inline]{Pay attention to this when editing! This section will catch eyes in FHI. It's important to get right, and you're writing it rather tired!}
 The problem of an agent's corrigibility is defined in~\cite{corrigibility} as:
 
 \begin{displayquote}
-We call an AI system “corrigible” if it cooperates with what its creators regard as a corrective intervention, despite default incentives for rational agents to resist attempts to shut them down or modify their preferences.
+We call an AI system ``corrigible'' if it cooperates with what its creators regard as a corrective intervention, despite default incentives for rational agents to resist attempts to shut them down or modify their preferences.
 \end{displayquote}
 
+Again, analysing human behaviour regarding corrigibility allows one to see what concepts can be transplanted to an intelligent agent. One is inclined to identify traits of humans which we associate with corrigibility, so as to maximise this trait --- but a formalism of incorrigible traits might be equally useful and present an alternative angle of attack.\par
 
+To demonstrate: incorrigible human agents might be described as ``stubborn''. Once they have a certain goal in mind, they are unlikely to shift it. The intelligent agent equivalent of this is that they appear naturally stubborn: sufficiently intelligent agents would identify that, when selecting an action which alters its utility function, the change does not help it to achieve its present goal. It is therefore unlikely to change its goal --- maximally stubborn. A formalism of stubbornness would describe this behaviour in a quantifiable way; a corrigible agent would then minimise values of its stubbornness formalism when assessing decisions.\par
+
+One might note that this approach has a flaw: a human who minimises this definition of stubbornness would be easily persuaded to change their goals on a whim and for little reason. Regarding a superintelligent agent, this is evidently a serious safety risk for human actors\footnote{Limitations of the theory are discussed in \cref{sec:limitations}.}. A tempting inclination is to fix these issues with further anthropomorphic analysis: for example, a responsibility formalism might weight non-stubborn decisions against whether the change appears to discharge (or prevent the discharge) of responsibilities the intelligent agent has. The agent might assert social responsibilities and so assess negative impacts of a choice it makes, or possibly assert a high degree of responsibility to listening to its creators, but not necessarily others. \par
+
+These approaches in turn have flaws and edge cases, but stray agents can be made more corrigible through these methods precisely because the theory provided allows one to specify the \emph{behaviour} of an agent.
 
 \subsection{Anthropology}
 
