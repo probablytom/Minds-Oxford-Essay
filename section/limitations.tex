@@ -1,7 +1,39 @@
-\section{Limitations of the Theory}\label{sec:limitations}
+\section{Limitations and Solutions}\label{sec:limitations}
+As it stands, the theory proposed has several useful applications. This is not to say, however, that it presents a complete and foolproof measure of how minds might interact in Sloman's space, nor is the theory as complete as one might hope it to be. These issues, regardless of their significance presently, do not seem to be ultimately fatal to the theory. We shall explore some of these issues now, and discuss future work which will address some issues with behaviour formalisms in the coming section (\cref{sec:future_work})
+
+% THis theory of mind requires functional states to give rise to emergent phenomena: these emergent phenomena are what the behaviour formalisms are based on, so functionalism is essential for formalisms to apply appropriately to humans and to computers.
+\subsection{Incompatibility with certain Theories of Mind}\label{subsec:incompatibility}
+One criticism of the proposed theory is that it is incompatible with some theories of mind, and relies on non-reductive physicalism, which --- while a popular theory --- has come under criticism with several counter arguments in the last few centuries. An argument can be made that any physicalist theory of mind is sufficient for the theory to work: all it relies on is that artificial minds belong in the space of minds with human minds. However, to permit equivalent behaviour across different Sloman subspaces, other physicalist theories such as identity theory require workarounds, because the bridge laws it relies on limit the minds that experience certain phenomena based partly on \emph{hardware}.\par
+
+Rather than detailing potential workarounds here for specific alternative theories of mind, the fact is instead acknowledged; future work can apply similar abstractions over Sloman's space to different theories of mind.\par
 
 % Never a complete fix: just like humans, there's always edge cases
+\subsection{The Edge Case}
+As may have been noticed already, behaviour formalisms alone can't solve problems in AI safety. One factor which conspires to complicate existential risk research is the difficulty of dealing with edge cases. To demonstrate: should a general artificial intelligence be created, it is unlikely that the algorithms that create it would be contained indefinitely. This is because these technologies to create the intelligence will be rediscovered many times, and commitment to the protection of this data from the public requires potentially international collaboration. As this is typically very difficult to achieve, one cannot rely on it. One must therefore work on the assumption that the public are likely to acquire the technologies necessary for creating their own general intelligences.\par
+
+Any safety measure which is not essential for the creation of a general intelligence should therefore be neglected as a complete solution: someone is likely to leave the algorithms out of their general intelligence, and only one such instance presents a major safety risk.\par
+
+Though it is tempting for this to inspire a rather bleak outlook, many processes may be discovered which may keep humanity safe from an artificial general intelligence. One such process is behaviour formalism. Behaviour formalisms present an opportunity for the constriction of possible behaviour an instance of an intelligence might exhibit, as the specification of the mind within the space of possible minds allows us to formalise anthropomorphic behaviour. Therefore, while these formalisms are not a complete solution to the issue, they are a helpful tool in an intelligence's safe construction.\par
 
 % Currently there aren't too many formalisms yet
+\subsection{Limited numbers of formalisms}
+One limitation of the theory as it currently stands is that, whole it is valuable in its practical merits, computational formalisms of human behaviour are limited in scope currently. Formalisms of trust are plentiful, and work is done on comfort and responsibility, but the spectrum of human behaviour and experience is hard to formalise. Lots of this work has not yet been undertaken. \par
+
+Over time, this limitation should lessen; regardless of the utility of the philosophical theory, formalisms as a tool for computer scientists, sociologists, and psychologists are useful and can be expected to grow in scope as a result. Therefore, this limitation is expected to be short-lived. Nevertheless, actual solutions to concrete AI problems may not be feasibly produced until a broader range of formalisms have been developed.\par
 
 % How can we quantify behaviour so as to empirically show that the argument regarding qualitative identity holds?
+\subsection{Quantifying Behaviour in Sloman's Space}
+% Behaviour is difficult to quantify; in part, this is the value of formalisms, as they provide an algorithmic or mathematical process for quantifying certain behaviours.\par
+% 
+% Solving the limitation of incompatibility with certain theories of mind (\cref{subsec:incompatibility}), however, gets easier with more strong arguments regarding the qualitative identity of the behaviour emerging from a formalism over different subspaces of minds. One of the reasons these stronger arguments cannot currently be made is that measurement of behaviour in a qualitative way is undeveloped: if this can be given some unit, and measured --- possibly using a process calculus, as algorithmic formalism of behaviour implies that processes can appropriately represent the behaviour of a SIGN NOT SURE WHAT TO SAY
+
+% Not all formalisms will actually be accurate. What happens if we build a ``trust'' formalism that isn't really?
+\subsection{Formalism Accuracy}
+One issue with formalisms as a field of study is whether they ``accurately'' represent the behaviour they claim to. For example, Eigentrust~\citep{eigentrust} uses the concept of trust a metaphor to draw conclusions from reputation, which it focuses on modelling. The argument often provided in these situations is that the behaviour ``formalised'' is a useful metaphor for an intended outcome or perceived behaviour on the part of the algorithm. Therefore, whether it accurately represents trust is a moot point, as it has no effect on Eigentrust's efficacy in its \emph{intended} purpose.\par
+
+I propose two solutions to this issue:
+
+\begin{enumerate}
+  \item The term ``anthropomorphic algorithms'' should apply specifically to behaviour formalisms which have their roots in well-defined sociology, psychology, and anthropology. In this way, researchers and AI developers should be able to distinguish between socially accurate behaviour formalisms and those derived from analogy for engineering purposes.
+  \item Development of rigorous formalism analysis in the fields that the formalisms originate from: this would enable a richer and more diverse range of formalisms, which is hard to produce without interdisciplinary collaboration with these social sciences and humanities subjects.
+\end{enumerate}
